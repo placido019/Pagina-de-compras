@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+#espaco1, #espaco2, #espaco3 {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 34px;
+    font-family: fantasy;
+    transition: transform 0.3s, width 0.3s, height 0.3s; /* Adicionamos transições para suavizar as mudanças */
+}
+
+#espaco1:hover, #espaco2:hover, #espaco3:hover {
+    transform: scale(1.1) translateY(-10px);
+    width: 330px;
+    height: 330px;
+}
